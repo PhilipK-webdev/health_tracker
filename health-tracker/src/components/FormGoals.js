@@ -90,7 +90,7 @@ const FormGoals = (props) => {
         }
       } else {
 
-        bmi = ((weight / (height * 12)) / (height * 12)) * 703;
+        bmi = ((weight / (height * 12) / (height * 12)) * 703);
         setResultBMI(bmi);
         if (gender === "Male") {
           bmr = 66 + 6.23 * weight + 12.7 * (height * 12) - 6.8 * age;
